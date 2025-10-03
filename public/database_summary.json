@@ -1,0 +1,126 @@
+{
+  "total_entries": 19008,
+  "unique_mxene_bases": 66,
+  "unique_metals": 11,
+  "functionalization_types": 12,
+  "unique_functional_groups": 42,
+  "molecular_weight_range": {
+    "min": 32.042,
+    "max": 276.41100000000006,
+    "mean": 98.85177083333332,
+    "std": 46.289297874163644
+  },
+  "logp_range": {
+    "min": -1.0626000000000002,
+    "max": 1.9839,
+    "mean": 0.41374416666666664,
+    "std": 0.8091093049510186
+  },
+  "binding_energy_range": {
+    "min": -11.84,
+    "max": -6.72,
+    "mean": -7.893976536195287,
+    "std": 0.8520803573109491
+  },
+  "lipinski_ro5_pass_rate": 1.0,
+  "veber_pass_rate": 1.0,
+  "top_10_binders": [
+    {
+      "ID": 2376,
+      "MXene_Base": "W2CO2H2",
+      "Product_Group": "tosylate",
+      "Best_Binding_All_Targets": -11.84,
+      "SMILES_Clean": "Cc1ccc(cc1)S(=O)(=O)O"
+    },
+    {
+      "ID": 11576,
+      "MXene_Base": "V3N2O2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.82,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 16536,
+      "MXene_Base": "Mo4N3O2H2",
+      "Product_Group": "tosylate",
+      "Best_Binding_All_Targets": -11.82,
+      "SMILES_Clean": "Cc1ccc(cc1)S(=O)(=O)O"
+    },
+    {
+      "ID": 2888,
+      "MXene_Base": "Zr2CO2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.79,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 200,
+      "MXene_Base": "Cr2CO2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.78,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 14264,
+      "MXene_Base": "Ta4C3O2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.76,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 11432,
+      "MXene_Base": "Ti3N2O2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.74,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 4280,
+      "MXene_Base": "Nb2NO2H2",
+      "Product_Group": "phthalate",
+      "Best_Binding_All_Targets": -11.72,
+      "SMILES_Clean": "c1ccc(c(c1)C(=O)O)C(=O)O"
+    },
+    {
+      "ID": 12073,
+      "MXene_Base": "W3N2O2H2",
+      "Product_Group": "besylate",
+      "Best_Binding_All_Targets": -11.71,
+      "SMILES_Clean": "c1ccccc1S(=O)(=O)O"
+    },
+    {
+      "ID": 5400,
+      "MXene_Base": "V2NO2H2",
+      "Product_Group": "tosylate",
+      "Best_Binding_All_Targets": -11.67,
+      "SMILES_Clean": "Cc1ccc(cc1)S(=O)(=O)O"
+    }
+  ],
+  "metal_distribution": {
+    "Cr": 1728,
+    "Hf": 1728,
+    "Mo": 1728,
+    "Nb": 1728,
+    "Sc": 1728,
+    "Ta": 1728,
+    "Ti": 1728,
+    "V": 1728,
+    "W": 1728,
+    "Y": 1728,
+    "Zr": 1728
+  },
+  "functionalization_distribution": {
+    "esterification": 3564,
+    "etherification": 2376,
+    "silylation": 1584,
+    "carbamoylation": 1584,
+    "acylation": 1584,
+    "alkylation": 1584,
+    "phosphorylation": 1188,
+    "sulfonation": 1188,
+    "polymer_grafting": 1188,
+    "amino_functionalization": 1188,
+    "thiol_functionalization": 1188,
+    "click_chemistry": 792
+  }
+}
