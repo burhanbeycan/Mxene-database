@@ -52,7 +52,7 @@ function App() {
     const loadData = async () => {
       try {
         // Load CSV data
-        const csvResponse = await fetch('/mxene_comprehensive_database.csv')
+        const csvResponse = await fetch('/Mxene-database/mxene_comprehensive_database.csv')
         const csvText = await csvResponse.text()
         
         Papa.parse(csvText, {
@@ -64,7 +64,7 @@ function App() {
         })
 
         // Load summary
-        const summaryResponse = await fetch('/database_summary.json')
+        const summaryResponse = await fetch('/Mxene-database/database_summary.json')
         const summaryData = await summaryResponse.json()
         setSummary(summaryData)
         
