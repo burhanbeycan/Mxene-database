@@ -10,7 +10,7 @@
 
 Comprehensive computational database exploring surface functionalization chemistry of OH-terminated MXenes through one-step and multi-step reactions. Includes molecular descriptors, binding energies, and drug-likeness metrics.
 
-**Live Website:** [https://burhanbeycan.github.io/mxene-database/](https://burhanbeycan.github.io/mxene-database/)
+**Live Website:** [https://burhanbeycan.github.io/mxene-database/](https://burhanbeycan.github.io/Mxene-database/)
 
 ## 📊 Database Statistics
 
@@ -36,7 +36,7 @@ Comprehensive computational database exploring surface functionalization chemist
 ## 🚀 Quick Start
 
 ### View Online
-Visit the live website: **[https://burhanbeycan.github.io/mxene-database/](https://burhanbeycan.github.io/mxene-database/)**
+Visit the live website: **[https://burhanbeycan.github.io/mxene-database/](https://burhanbeycan.github.io/Mxene-database/)**
 
 ### Run Locally
 
