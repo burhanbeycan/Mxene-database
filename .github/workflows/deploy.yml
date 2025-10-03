@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Build
+        run: pnpm run build
+      
+      - name: Verify build output
+        run: |
+          echo "=== Contents of dist folder ==="
+          ls -lah dist/
+          echo ""
+          echo "=== Size of dist folder ==="
+          du -sh dist/
+          echo ""
+          echo "=== Checking for CSV file ==="
+          if [ -f "dist/mxene_comprehensive_database.csv" ]; then
+            echo "✅ CSV file found in dist!"
+            ls -lh dist/mxene_comprehensive_database.csv
+          else
+            echo "❌ CSV file NOT found in dist!"
+            echo "Files in dist:"
+            find dist -type f -name "*.csv"
+          fi
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
