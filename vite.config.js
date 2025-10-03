@@ -8,7 +8,7 @@ export default defineConfig({
   // IMPORTANT: Update 'base' with your GitHub repository name
   // For example: '/mxene-database/' if your repo is github.com/username/mxene-database
   // Use '/' if deploying to root domain
-  base: '/Mxene-database/',  // ⚠️ Change this to match your repo name!
+  base: '/Mxene-database/',  
   
   plugins: [react(),tailwindcss()],
   
