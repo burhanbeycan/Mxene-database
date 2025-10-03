@@ -51,6 +51,15 @@ jobs:
       - name: Build
         run: pnpm run build
       
+      - name: Copy public files to dist
+        run: |
+          echo "Copying public folder contents to dist..."
+          cp -r public/* dist/ || true
+          echo "Files in dist after copy:"
+          ls -lh dist/
+          echo "Checking for CSV file:"
+          ls -lh dist/*.csv || echo "CSV not found in dist root"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
